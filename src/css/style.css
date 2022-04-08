@@ -1,0 +1,168 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* CABEÇALHO */
+.filtersContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+.estiloGeralBotoes{
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.estiloGeralBotoes--mostrarTodos {
+    color: black;
+    background-color: #d3d3d3;
+}
+
+.estiloGeralBotoes--filtrarHortifruti {
+    background-color: tomato;
+    color: white;
+}
+
+.containerBuscaPorNome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campoBuscaPorNome {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+.estiloGeralBotoes--botaoBuscaPorNome {
+    background-color: rgb(17, 17, 20);
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+/* CONTEÚDO */
+main{
+    display: flex;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.containerListaProdutos {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.containerListaProdutos ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.containerListaProdutos ul li:not(ol li) {
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: ease-in-out .1s;
+    width: 20%;
+}
+
+.containerListaProdutos ul li:not(ol li):hover {
+    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+}
+
+.containerListaProdutos ul li img {
+    width: 100%;
+    max-width: 80px;
+}
+
+.containerListaProdutos ul li h3 {
+    font-size: 1.5rem;
+}
+
+.containerListaProdutos ul li p {
+    font-size: 1.5rem;
+}
+.containerListaProdutos ul li span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.containerListaProdutos ul li button {
+    background-color: #009f5a;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+}
+.containerListaProdutos ul li button:hover {
+    box-shadow: 1px 1px 2px rgb(189, 189, 189);
+}
+
+.containerListaProdutos ul li ol{
+    list-style: inside decimal;
+    text-align: left;
+}
+.containerListaProdutos ul li ol li{
+    font-size: 13px;
+    margin: 7px 0;
+}
+
+/* PREÇO TOTAL */
+.containerPrecoTotal{
+    text-align: center;
+    margin: 40px 0 30px;
+}
+.containerPrecoTotal p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.containerPrecoTotal p span{}
+
+
+
+.containerCarrinho {
+    width: 450px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.containerCarrinho img {
+    max-width: 100px;
+}
+.containerCarrinho ul {
+    
+    display: flex;
+    flex-direction: column;
+}
+.containerCarrinho button {
+    display: none;
+}
+.containerCarrinho li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.containerCarrinho li span{
+    font-size: 1.125rem;
+}
+
+.containerCarrinho li ol{
+    display: none;
+}
